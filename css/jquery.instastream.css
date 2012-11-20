@@ -1,0 +1,145 @@
+/* ==========================================================================
+   jQuery InstaStream - A jQuery plugin for the Instagram API
+   ========================================================================== */
+
+/* -----------------------------------------
+   laoding
+----------------------------------------- */
+.loading{background:url('../img/loading.png') no-repeat left top;width:48px;height:48px;position: absolute; top:50%;left:50%;-webkit-animation: spining 1s;animation: spining 1s;opacity: .6;}
+@-webkit-keyframes spining{
+	0%     {-webkit-transform: rotate(-0deg);}
+	25%    {-webkit-transform: rotate(-90deg);}
+	50%    {-webkit-transform: rotate(-180deg);}
+	75%    {-webkit-transform: rotate(-270deg);}
+	100%   {-webkit-transform: rotate(-358deg);}
+}
+@keyframes spining{
+	0%     {-webkit-transform: rotate(-0deg);}
+	25%    {-webkit-transform: rotate(-90deg);}
+	50%    {-webkit-transform: rotate(-180deg);}
+	75%    {-webkit-transform: rotate(-270deg);}
+	100%   {-webkit-transform: rotate(-358deg);}
+}
+/* -----------------------------------------
+   slider
+----------------------------------------- */
+.slider-wrapper{position: relative;}
+
+.slider-menu{position: absolute;height: 16px;top:45%;width:100%;}
+.slider-menu a{display:block;position:absolute;opacity:.5;}
+.slider-menu a:hover{opacity:1;}
+.slider-menu .prev{left: -24px;}
+.slider-menu .next{right:-24px;}
+
+.slider-content:after,
+.slider-content:before {clear: both;content: "";display: table;}
+
+.slider-item{float:left;margin-left: 4%;}
+.slider-item:first-child{margin-left: 0;}
+.slider-item h4{text-align: center;}
+
+.slider-col1{width: 100%;margin-left: 0;float: none;}
+.slider-col2{width: 47.8%;}
+.slider-col3{width: 30.37%;}
+.slider-col4{width: 21.75%;} /* Add classes if you want more than 4 results */
+
+
+/* -----------------------------------------
+   frame
+----------------------------------------- */
+.frame{
+	background-color: #FFF;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	border: 5px solid #131313;
+	text-align: center;
+	position: relative;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	overflow: hidden;
+}
+.frame:hover{
+	/**/
+}
+.frame a{
+	padding:14% 15% 13% 15%;
+	width:70%;
+	height: 70%;
+	display: block;
+	border:1px solid #000;
+	border-left:1px solid rgba(0,0,0,0.4);
+	border-top:1px solid rgba(0,0,0,0.4);
+	cursor: pointer;
+	z-index:100;
+}
+.frame a img{
+	z-index:0;
+	max-width:100%;
+	background-color: #FFF;
+	/*border:1px solid #FFF;*/
+	border-left:1px solid rgba(0,0,0,0.2);
+	border-top:1px solid rgba(0,0,0,0.2);
+}
+.frame a span{
+	display: block;
+	position: absolute;
+	width:100%;
+}
+.frame a span.frame-reflect{
+	background:transparent url('../img/reflect.png') no-repeat center center;
+	top:0;
+	left:0;
+	text-indent: -999em;
+	height: 100%;
+}
+.frame a span.frame-more{
+	background:transparent url('../img/bg_more.png') no-repeat center top;
+	left:0;
+	top: -38px;
+	height: 38px;
+	color: #FFF;
+	text-indent: -999em;
+}
+.frame a span.frame-title{
+	background-image: linear-gradient(bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+	background-image: -moz-linear-gradient(bottom, rgba(20,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgba(0,0,0,0.2)),color-stop(1, rgba(0,0,0,0)));
+	left:0;
+	bottom: -50px;
+	height: 15%;
+}
+.frame a span.frame-title em{
+	font-style: normal;
+	display: inline-block;
+	padding: 2px 4px 0 4px;
+	font-size: 11px;
+	line-height: 15px;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+}
+
+/* -----------------------------------------
+   icons
+----------------------------------------- */
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+  vertical-align: middle;
+  background-image: url('../img/icons.svg');
+  background-repeat: no-repeat;
+  width:16px;
+  height: 16px;
+  font-size: 0;
+  color:transparent;
+}
+[class^="icon-"].white,
+[class*=" icon-"].white{ background-image: url('../img/icons-white.svg');}
+.icon-like {background-position: 0 0;}
+.icon-comment {background-position: -16px 0;}
+.icon-prev {background-position: -32px 0;}
+.icon-next {background-position: -48px 0;}
