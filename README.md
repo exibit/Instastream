@@ -10,9 +10,24 @@ Once you have your Token you can start using this jQuery plugin.
 <h2>Installation</h2>
 <ol>
 	<li>Unzip the folder</li>
-	<li>Unzip the </li>
-	<li>Unzip the </li>
-	<li>Unzip the </li>
+	<li>Add the js file to your website </li>
+	<li>Add css styles to your website </li>
+	<li>Add 'img' folder to your website </li>
 </ol>
 <h2>Configuration</h2>
+To call the plugin, you need to write a little javascript/jQuery code
+
+<code>jQuery(document).ready(function ($) {
+
+	/* INSTASTREAM DEMO 1 */
+  $("#demo1").instastream({
+		instaToken: '1011689.764d34f.25312ac794bf41f5b7c3d2f3385ce17e',
+		instaUser: '1011689',
+		instaResults: 3,
+		instaMenu: 'yes'
+	});
+	
+	
+	
+});</code>
 
