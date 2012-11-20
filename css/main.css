@@ -65,14 +65,21 @@ body > header{margin:0;padding:2em 0;}
 body > footer{margin:0;padding:2em 0;}
 
 h1{font-size: 4em;line-height: 1em;}
-a{color:#666;}
-pre{background-color: #666;padding:2em;}
+a{color:rgba(0,0,0,.6);}
 
 #main{background-color: #06B3D5;color:#333;padding:2em 0;border-top:1.2em solid #333;}
 #demo1{margin-bottom: 30px;min-height: 200px;}
 
 
-
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	background-color: rgba(0,0,0,.5);
+	color:#fff;
+	padding:1em;
+}
 
 
 /* ==========================================================================
