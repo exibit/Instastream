@@ -14,12 +14,13 @@ Once you have your Token you can start using this jQuery plugin.
 	<li>Add css styles to your website </li>
 	<li>Add 'img' folder to your website </li>
 </ol>
+
 <h2>Configuration</h2>
-To call the plugin, you need to write a little javascript/jQuery code
+<p>To call the plugin, you need to write a little javascript/jQuery code</p>
 
 <pre><code>jQuery(document).ready(function ($) {
 
-  $("#demo1").instastream({
+  $("#theplaceyouwant").instastream({
 		instaToken: 'Your Instagram Token here',
 		instaUser: 'Your Instagram User ID here',
 		instaResults: 3,
@@ -28,4 +29,6 @@ To call the plugin, you need to write a little javascript/jQuery code
 	
 });
 </code></pre>
+
+<p></p>
 
