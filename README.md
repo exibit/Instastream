@@ -1,0 +1,1 @@
+InstaStream - A simple jQuery plugin to stream pictures from Instagram
