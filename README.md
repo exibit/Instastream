@@ -17,7 +17,7 @@ Once you have your Token you can start using this jQuery plugin.
 <h2>Configuration</h2>
 To call the plugin, you need to write a little javascript/jQuery code
 
-<code>jQuery(document).ready(function ($) {
+<pre><code>jQuery(document).ready(function ($) {
 
   $("#demo1").instastream({
 		instaToken: 'Your Instagram Token here',
@@ -27,5 +27,5 @@ To call the plugin, you need to write a little javascript/jQuery code
 	});
 	
 });
-</code>
+</code></pre>
 
