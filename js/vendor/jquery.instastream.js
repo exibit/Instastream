@@ -13,11 +13,12 @@
         document = window.document,
         defaults = {
             instaUser: '1011689',
-            instaResults: 4,
+            instaResults: 3,
             instaMenu: 'yes'
         };
     
     var $nbrResults;
+    var $instaMenu;
     var $instaUrl;
     var $slideStatus =0;
     // Constructor
@@ -55,7 +56,9 @@
 	      cache: false,
 	      url: $instaUrl,
 	      success: function(data) {
-	        $(target).append("<div class='slider-menu'><a href='#' class='prev'><i class='icon-prev'></i></a><a href='#' class='next'><i class='icon-next'></i></a></div><div class='slider-content'></div>");
+	      	if ($instaMenu == 'yes'){
+		        $(target).append("<div class='slider-menu'><a href='#' class='prev'><i class='icon-prev'></i></a><a href='#' class='next'><i class='icon-next'></i></a></div><div class='slider-content'></div>");
+	        }
 		    	for (var i = 0; i < $nbrResults; i++) {
 		    	  if (j<20){
 		    	  	
