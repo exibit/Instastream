@@ -30,9 +30,9 @@ Once you have your Token you can start using this jQuery plugin.
 });
 </code></pre>
 
-<p>You can choose how many pictures you xant by slide. CSS covers 1,2,3 and 4 results, feel free to add new styles if you want more results by slide.</p>
+<p>You can choose how many pictures you want by slide. CSS cover 1,2,3 and 4 results, feel free to add new styles if you want more results by slide.</p>
 
-<p>Be aware that the JSON file that the plugin read from Instagram only allow 20 pictures.</p>
+<p>Be aware that the JSON file that the plugin read from Instagram only shows 20 pictures.</p>
 
 <p>That's it, have fun !</p>
 
