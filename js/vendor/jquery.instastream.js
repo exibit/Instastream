@@ -66,7 +66,7 @@
 		    	  	if (data.data[j].comments.count < 2){var commentLabel = 'commentaire'} else {var commentLabel = 'commentaires'}
 		    	  	if (data.data[j].likes.count < 2){var likeLabel = 'like'} else {var likeLabel = 'likes'}
 		    	  
-		    	  	$('.slider-content').append("<div id='slider-item"+i+"' class='slider-item slider-col"+$nbrResults+"'><div class='frame'><a href='" + data.data[j].link + "'><img src='" + data.data[j].images.standard_resolution.url + "' alt='" + myCaption + "'><span class='frame-title' style='display: block; bottom: -50px;'><em>" + data.data[i].likes.count + "<i class='icon-like white'>" + likeLabel + "</i> " + data.data[j].comments.count + "<i class='icon-comment white'>" + commentLabel + "</i> " + data.data[j].created_time.timeconverter() + "</em></span><span class='frame-more' style='display: block; top: -38px;'>+</span><span class='frame-reflect'></span></a></div><header><h4>" + myCaption + "</h4></header>"); 
+		    	  	$('.slider-content').append("<div id='slider-item"+i+"' class='slider-item slider-col"+$nbrResults+"'><div class='frame'><a href='" + data.data[j].link + "'><img src='" + data.data[j].images.standard_resolution.url + "' alt='" + myCaption + "'><span class='frame-title' style='display: block; bottom: -50px;'><em>" + data.data[j].likes.count + "<i class='icon-like white'>" + likeLabel + "</i> " + data.data[j].comments.count + "<i class='icon-comment white'>" + commentLabel + "</i> " + data.data[j].created_time.timeconverter() + "</em></span><span class='frame-more' style='display: block; top: -38px;'>+</span><span class='frame-reflect'></span></a></div><header><h4>" + myCaption + "</h4></header>"); 
 		    	  	j++;
 		    	  	$slideStatus = j;
 		        }
