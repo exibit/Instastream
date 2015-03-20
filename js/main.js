@@ -2,8 +2,8 @@ jQuery(document).ready(function ($) {
 
 	/* INSTASTREAM DEMO */
   $("#demo1").instastream({
-		instaToken: 'Your Instagram Token here',// More information on http://instagram.com/developer/
-		instaUser: 'Your Instagram User ID here',//
+		instaToken: 'a164a0f6607c4aca9e0e4dff13937277',// More information on http://instagram.com/developer/
+		instaUser: 'Snapifeye',//
 		instaResults: 3,
 		instaMenu: 'yes'
 	});
